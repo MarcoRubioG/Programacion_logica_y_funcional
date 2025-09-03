@@ -9,3 +9,23 @@ class Expresion1 {
         System.out.println(x);
     }
 }
+//Expresion 2
+//Ahora primero va ser esta parte ++ la cual seria lo mismo a 1 + y ya pone x dando como resultado 1+10 =11
+class Expresion2 {
+    public static void main(String[] args) {
+        int x=10;
+        int b=10;
+        System.out.println(++x);
+    }
+}
+//Expresion3 
+//Ahora primer se expresa b++ que es 10 * -3 luego el otro es 10 % *- 3 dando -3 por lo tanto se evalua -33 == -3 dando resultado un false 
+class Expresion3 {
+      static int x=10;
+     static int b=10;
+    
+    public static void main(String[] args) {
+         boolean total = b++ * -3 == -3 % x++;
+        System.out.println(total);
+    }
+}
