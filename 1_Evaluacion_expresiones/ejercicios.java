@@ -29,3 +29,16 @@ class Expresion3 {
         System.out.println(total);
     }
 }
+
+
+//Expresion4 30 - 10 /= % ++b + 30 % 7 * 2
+class Expresion4 {
+      static int x=10;
+     static int b=10;
+    
+    public static void main(String[] args) {
+        double j= 30 - 10;
+        j/= ++b + (30% 14);
+        System.out.println(j);
+    }
+}
