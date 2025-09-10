@@ -10,6 +10,8 @@ menu = do
     putStrln("=== MENU ===")
     putStrln("Que deseas hacer?")
     putStrln("1)Factorial")
+    putStrln("2)Salir")
+
     opcion <- getLine
 
     case opcion of
@@ -18,7 +20,11 @@ menu = do
              n1 <- getLine
              let x = read n1 :: Integer
              putStrln("El resultado es: "++ show (factorial x))
-    menu
+        "2"-> do
+            putStrln("ADIOS")
+        _ -> do
+            putStrln("Opcion no valida")
+            menu
 
 
 main :: IO()
