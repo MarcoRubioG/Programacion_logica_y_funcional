@@ -46,3 +46,19 @@ empleados_del_jefe_de(Persona, Empleado) :-
     reporta_a(Persona, Jefe),
     reporta_a(Empleado, Jefe),
     Persona \= Empleado.
+
+% 5 Es Timothy jefe de Rebecca
+es_jefe_de(Jefe, Empleado) :- reporta_a(Empleado, Jefe).
+
+% 6 Mostrar compañeros de nivel de Mike
+companeros_nivel(Persona, Companero) :- 
+    reporta_a(Persona, Jefe),
+    reporta_a(Companero, Jefe),
+    Persona \= Companero.
+
+% 7 Es el jefe de Rebecca compañero de nivel de David
+jefe_es_companero_de(Empleado, Persona) :- 
+    reporta_a(Empleado, Jefe),
+    reporta_a(Jefe, JefeComun),
+    reporta_a(Persona, JefeComun),
+    Jefe \= Persona.
