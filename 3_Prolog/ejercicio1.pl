@@ -62,3 +62,28 @@ jefe_es_companero_de(Empleado, Persona) :-
     reporta_a(Jefe, JefeComun),
     reporta_a(Persona, JefeComun),
     Jefe \= Persona.
+
+
+% Pregunta 1: ¿Quién es el jefe de Rebecca?
+% Respuesta: jefe_de(rebecca, X).
+
+% Pregunta 2: ¿Es jefe Mark del jefe de Rebecca?
+% Respuesta: es_jefe_mark_del_jefe_de(rebecca).
+
+% Pregunta 3: ¿Es Lori jefe de alguien?
+% Respuesta: es_jefe(lori_goler).
+
+% Pregunta 4: Mostrar empleados del jefe de Heather
+% Respuesta: empleados_del_jefe_de(heather, X).
+
+% Pregunta 5: ¿Es Timothy jefe de Rebecca?
+% Respuesta: es_jefe_de(timothy_campos, rebecca).
+
+% Pregunta 6: Mostrar compañeros de nivel de Mike
+% Respuesta: companeros_nivel(mike_schroepfer, X).
+
+% Pregunta 7: ¿Es el jefe de Rebecca compañero de nivel de David?
+% Respuesta: jefe_es_companero_de(rebecca, david_wehner).
+
+% Pregunta 8: ¿Es compañero de nivel Mike de Lori?
+% Respuesta: companeros_nivel(mike_schroepfer, lori_goler).
