@@ -32,3 +32,17 @@ reporta_a(heather, elliot_schrage).
 
 % 1 Quién es el jefe de Rebecca
 jefe_de(Empleado, Jefe) :- reporta_a(Empleado, Jefe).
+
+% 2. Es jefe Mark del jefe de Rebecca
+es_jefe_mark_del_jefe_de(Empleado) :- 
+    reporta_a(Empleado, Jefe),
+    reporta_a(Jefe, mark_zuckerberg).
+
+% 3 Es Lori jefe de alguien
+es_jefe(Persona) :- reporta_a(_, Persona).
+
+% 4 Mostrar empleados del jefe de Heather
+empleados_del_jefe_de(Persona, Empleado) :- 
+    reporta_a(Persona, Jefe),
+    reporta_a(Empleado, Jefe),
+    Persona \= Empleado.
