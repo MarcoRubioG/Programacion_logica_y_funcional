@@ -8,3 +8,11 @@ reporta_a(timothy_campos, mark_zuckerberg).
 reporta_a(mike_schroepfer, mark_zuckerberg).
 reporta_a(elliot_schrage, mark_zuckerberg).
 reporta_a(lori_goler, mark_zuckerberg).
+
+% Cargos principales
+cargo(sheryl_sandberg, coo).
+cargo(david_wehner, cfo).
+cargo(timothy_campos, cio).
+cargo(mike_schroepfer, cto).
+cargo(elliot_schrage, cmo).
+cargo(lori_goler, hr).
