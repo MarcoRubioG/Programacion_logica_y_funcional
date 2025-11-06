@@ -27,3 +27,8 @@ cargo(stanley_freifeld, global_mkt).
 % Rebecca y Heather reportan a Elliot Schrage
 reporta_a(rebecca, elliot_schrage).
 reporta_a(heather, elliot_schrage).
+
+
+
+% 1 Quién es el jefe de Rebecca
+jefe_de(Empleado, Jefe) :- reporta_a(Empleado, Jefe).
