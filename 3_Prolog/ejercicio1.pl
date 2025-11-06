@@ -16,3 +16,14 @@ cargo(timothy_campos, cio).
 cargo(mike_schroepfer, cto).
 cargo(elliot_schrage, cmo).
 cargo(lori_goler, hr).
+
+% Reportan a Elliot Schrage
+reporta_a(robert_van_dyk, elliot_schrage).
+reporta_a(stanley_freifeld, elliot_schrage).
+
+cargo(robert_van_dyk, cdo).
+cargo(stanley_freifeld, global_mkt).
+
+% Rebecca y Heather reportan a Elliot Schrage
+reporta_a(rebecca, elliot_schrage).
+reporta_a(heather, elliot_schrage).
