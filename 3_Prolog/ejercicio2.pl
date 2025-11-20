@@ -34,9 +34,10 @@ pertenece(gibbon, hylobates, species).
 descendiente_directo(X, Y) :- 
     pertenece(X, Y, _).
 
-% Descendiente indirectos 
+% Descendiente
 descendiente(X, Y) :- 
     pertenece(X, Y, _).
+% Descendiente indirectos 
 descendiente(X, Y) :- 
     pertenece(X, Z, _), 
     descendiente(Z, Y).
@@ -67,7 +68,7 @@ mismo_padre(X, Y, Padre) :-
 de_nivel(X, Nivel) :- 
     pertenece(X, _, Nivel).
 
-% Ruta desde un elemento hasta la raíz
+% Ruta desde uno  hasta la arriba
 ruta(X, [X]) :- 
     pertenece(X, root, _).
 ruta(X, [X|Resto]) :- 
